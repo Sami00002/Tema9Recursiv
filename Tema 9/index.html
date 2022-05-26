@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+n=6;
+
+       function sumaRec(n) {
+            // debugger;
+            if (n > 0)
+                return n + sumaRec(n - 1);
+            else
+                return 0;
+        }
+        console.log(sumaRec(n))
+
+        function produsRec(n){
+            if (n%2==0 && n > 0)
+                return n * produsRec(n-2);
+            else
+                return 1;   
+        }
+        console.log(produsRec(n))
+   </script> 
+</body>
+</html>
